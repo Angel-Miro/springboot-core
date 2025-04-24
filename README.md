@@ -3,7 +3,7 @@
 ## SB= SPRINGBOOT, FWK = SPRING FRAMEWORK
 ## SB 3 | FWK 6 | jdk17+
 ## SB 2 | FWK 5 | jdk8+
-## SB 1 | FWK 1 | jdk6,7, 8
+## SB 1 | FWK 4 | jdk6,7, 8
 
 
 ### Con este proyecto se pretende mostrar los aspectos básicos de spring core.
