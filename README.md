@@ -25,7 +25,8 @@
      @Repository  : Anotación para la capa de persistencia
      @Service     : Anotación que denota lógica de negocio
      @Controller  : Anotación para indicar un controlador
-    
+     @Primary : Sirve para especificar que implementación utilizar por defecto
+     @Qualifier : Especifica que implementación inyectar
     -------------------------------------------------------------------------------------
     @RequestParam : Dato que se envia para busqueda
         http://localhost:9090/cd/get-all-request-param?anio=2005 , donde ?anio=2005 es para pasar el valor a buscar
@@ -37,10 +38,13 @@
 
     @RequestBody: Sirve para indicar que recibira un cuerpo, normalmente en JSON
 
-## @RestController : Es una anotación que combina @Controller y @ResponseBody
-     Dando como resultado la salida como JSON, utilizando la librería jackson
+    @RestController : Es una anotación que combina @Controller y @ResponseBody
+    Dando como resultado la salida como JSON, utilizando la librería jackson
 
-### @Primary : Sirve para especificar que implementación utilizar
+    @RestControllerAdvice : Sirve para mapear los errores en un rest controller, va a nivel de clase
+    @ExceptionHandler : Sirve para indentificar la clase de error que se quiere controlar, va a nivel de método.
+
+
 
 ### Scopes : Se anota la clase con @Scope("singleton/prototype"), el scope por defecto es el Singleton
     Singleton : misma referencia en memoria
