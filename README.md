@@ -43,7 +43,7 @@
 
     @RestControllerAdvice : Sirve para mapear los errores en un rest controller, va a nivel de clase
     @ExceptionHandler : Sirve para indentificar la clase de error que se quiere controlar, va a nivel de método.
-
+    -   spring.web.resources.add-mappings=false // para customizar la respuesta 404
 
 
 ### Scopes : Se anota la clase con @Scope("singleton/prototype"), el scope por defecto es el Singleton
