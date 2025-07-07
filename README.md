@@ -46,6 +46,14 @@
     -   spring.web.resources.add-mappings=false // para customizar la respuesta 404
 
 
+### Interceptores : Son fragmentos de código que interceptan un método del controlador para agregar funcionalidad antes o después.
+    Ej: Autenticación
+        Autorización
+        Loggear
+        Transacción
+    
+
+
 ### Scopes : Se anota la clase con @Scope("singleton/prototype"), el scope por defecto es el Singleton
     Singleton : misma referencia en memoria
     Prototype : se genera uno cada vez que se manda a llamar
